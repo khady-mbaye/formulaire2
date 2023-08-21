@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> formulaire 2</title>
+        <meta name="utf-8">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<meta name="viewport" content="width=device-width, initial-scal=0.1">
+        <style>
+           .partie{
+                width: 75%;
+				height: 900px;
+				margin: 0 auto;
+                border: 2px solid black;
+	            margin: 0 auto;
+	            margin-bottom: 10px;
+	            background: -webkit-linear-gradient(left, #660033, #cc6699);
+	            background: -moz-linear-gradient(left, #660033, #cc6699);
+	            background: -o-linear-gradient(left, #660033, #cc6699);
+	            background: linear-gradient(left, #660033, #cc6699);
+	            display: flex;
+	            flex-direction: row;
+	            justify-content: center;
+	            align-items: center;
+           }
+           .div1{
+                 width: 35%;
+				height: 500px;
+                border: 1px solid black;
+	            background-color: #000033;
+	            color: white;
+           }
+           .div2{
+                width: 35%;
+				height: 500px;
+                background-image: url('tache03.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+               
+           }
+           img{
+            width: 18px ;
+            height: 18px;
+           }
+           h1{
+            text-transform: capitalize;
+	        color: #660033;
+            text-align: center;
+           }
+           .demi{
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           }
+           input{
+            width: 70%;
+            padding-top: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid white;
+	        background-color: #000033;
+           }
+           .mail{
+            width: 73%;
+           }
+           textarea{
+            padding-top: 40px;
+            width: 66%;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid white;
+	        background-color: #000033;
+           }
+           /* .khady{
+            width: 25%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+           } */
+           #send{
+            /* width: 100%;
+            border-bottom: none;
+            color: white;
+            background: -webkit-linear-gradient( #660033,  #330033);
+	        background: -moz-linear-gradient(#660033,  #330033);
+	        background: -o-linear-gradient(#660033,  #330033);
+	        background: linear-gradient( #660033,  #330033); */
+            width: 30%;
+				outline: none;
+                margin: 0 auto;
+                border-bottom: none;
+				margin-top: 20px;
+				padding: 15px;
+				position: relative;
+				left: 30%;
+				background-color: #660033;
+				color: white; 
+           }
+           .margin , .demi , h1{
+            position: relative;
+            left: 10%;
+           }
+           span{
+            position: relative;
+            bottom: 20px;
+           }
+           @media screen and (max-width:600px) {
+            input::placeholder{
+                font-size: 20px;
+            }
+            .partie{
+                width: 100%;
+                height: 100vh;
+                padding-right: 10%;
+               
+            }
+            .div2{
+                display: none;
+            }
+            .div1{
+                width: 100%;
+                /* height: 500px; */
+                height: 70vh;
+               position: relative;
+               left: 5%;
+                
+            }
+            
+            input{
+                padding-top: 40px;
+            }
+            textarea{
+                padding-top: 60px;
+            }
+            p , label{
+                font-size: 20px;
+            }
+           }
+        </style>
+    </head>
+    <body>
+        <div class="partie"> 
+            <div class="div1">
+                <h1>Set The Event</h1>
+			    <div class="demi">
+			        <p>price</p>
+				    <p>$270</p>
+				
+			    </div>
+			    <div class="demi">
+				    <p>people</p>
+				    <p>1<i class="fa-solid fa-caret-down"></i></p>
+			    </div>
+               <div class="margin">
+                     <label for="name">Name</label>
+				    <input type="text" placeholder="Joane Doe" >
+               </div>
+				<div class="margin">
+                    <label></label> mail</label>
+			        <input type="email" name="email" class="mail">
+                </div>
+				<div class="margin">
+                    <label for="number">phone</label>
+				    <input type="number" name="number">
+                </div>
+				<div class="margin">
+                    <label for="commentaire"><span>comment</span></label>
+				    <textarea name="commentaire"></textarea>
+                </div >
+                <input type="submit" value="Send" id="send" >
+            </div>
+            <div class="div2">
+                
+            </div>
+        </div>
+    </body>
+</html>
